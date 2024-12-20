@@ -14,4 +14,4 @@ jobs:
   run-on: ubuntu-latest
   steps: 
    - name: Inputs
-   - run: echo "Input"
+     run: echo "Input"
