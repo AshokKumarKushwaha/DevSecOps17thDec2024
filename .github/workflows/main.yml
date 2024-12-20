@@ -11,7 +11,8 @@ on:
     default: false
 jobs:
  inputs:
-  run-on: ubuntu-latest
+ run-on: ubuntu-latest
   steps: 
    - name: Inputs
      run: echo "Input"
+
