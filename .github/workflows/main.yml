@@ -1,15 +1,17 @@
 name: Input
 
-run-name: Inputs | DEBUG - ${{inputs.debug}}
+
+
 on:
  push:
  workflow_dispatch:
   inputs:
    debug:
-   type: boolean
-   default: false
+    type: boolean
+    default: false
 jobs:
  inputs:
- run-on: ubuntu-latest
- steps: Inputs
- run: echo "Input"
+  run-on: ubuntu-latest
+  steps: 
+   - name: Inputs
+   - run: echo "Input"
