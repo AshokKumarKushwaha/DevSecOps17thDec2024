@@ -10,7 +10,7 @@ on:
 
 jobs:
  echo-environment:
-   run-on: ubuntu-latest
+   runs-on: ubuntu-latest
    environment: $${{inputs.TARGET_ENVIRONMENT}}
    steps:
     - name: Echo Vars
