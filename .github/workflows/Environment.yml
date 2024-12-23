@@ -1,0 +1,19 @@
+name: Environment
+
+on: 
+ push:
+ workflow_dispatch:
+  inputs:
+   TARGET_ENVIRONMENT:
+   type: environment
+   default: staging
+
+jobs:
+ echo-environment:
+  runs-on: ububtu-latest
+  environment: ${{inputs.TARGET_ENVIRONMENT}}
+  steps:
+   - name: Echo Vars
+     run: |
+      echo " Secret Variable ${{secrets.TEST_SECRET1}}"
+      echo " Var is ${{vars.VAR1}}"
