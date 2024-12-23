@@ -1,0 +1,19 @@
+name: Input
+
+
+
+on:
+ push:
+ workflow_dispatch:
+  inputs:
+   debug:
+    type: boolean
+    default: false
+jobs:
+ inputs:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Inputs
+     run: echo "Input"
+   
+  
