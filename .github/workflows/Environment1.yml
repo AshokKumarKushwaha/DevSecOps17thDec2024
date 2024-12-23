@@ -15,6 +15,6 @@ jobs:
   steps:
    - name: Echo Vars
      run: |
-      echo " Secret variable ${{secrets.TEST_SECRET1}}"
-      echo " var is ${{vars.VAR1}}"
+      echo "Secret variable ${{secrets.TEST_SECRET1}}"
+      echo "var is ${{vars.VAR1}}"
   
