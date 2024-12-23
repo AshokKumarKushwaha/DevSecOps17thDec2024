@@ -5,7 +5,7 @@ on:
 
 jobs:
   echo-matrix:
-   name: ${{mstrix.os}} - ${{matrix.node-version}}
+   name: ${{matrix.os}} - ${{matrix.node-version}}
    runs-on: ${{matrix.os}}
    strategy:
     matrix:
